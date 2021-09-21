@@ -20,8 +20,14 @@ This React Concept & Front_end development
 - src 폴더에 우리가 직접 작성할 소스코드 파일이 들어가고, public 폴더에 static 자원이 위치한다. public/index.html과 src/index.js는 엔트리 포인트가 되는 소스로, 파일이름이 변경되면 create-react-app은 작동하지 않으므로 주의한다.
 
 ### 컴포넌트(Component)란?
-> 컴포넌트란 프로그래밍에 있어 재사용이 가능한 각각의 독립된 모듈을 뜻한다.
+> 컴포넌트란 프로그래밍에 있어 재사용이 가능한 각각의 독립된 모듈을 뜻한다. Module과 비슷하게 컴포넌트로 이뤄져 있어서 resuable이 뛰어나다. 
 
 ### DOM이란?
 > Javascript는 브라우저가 읽고 어떤 작업을 할 수 있는 언어, DOM은 바로 이 작업이 이루어지는 장소이다. 사실 우리가 ‘JavaScript로 하는 것’ 이라고 생각하는 것은 정확히는 “DOM API”이다. 
 React는 꼭 필요한 부분만 갱신하여 내부상태(가상 DOM)와 뷰(실제 DOM)를 같게 만든다.  
+
+> Virtual DOM은 Real DOM 과 같은 porperties들을 갖고 있으면 그냥 가볍게 Real DOM을 Copy한거라고 보면된다. 
+1. JSX(우선 HTML 으로 알아두자) 을 렌더링 한다. 그러면 Virtual DOM이 Update가 된다.
+2. virtual DOM이 이전 Virtual DOM에서 찍어둔 Snapshot과 비교를 해서 바뀐 부분을 찾는다.
+3. 위 과정을 diffing 이라고 부른다. 
+4. 그 바뀐 부분만 Real DOM에서 바꿔준다. 
