@@ -16,6 +16,7 @@ This React Concept & Front_end development
 
 - npm install -g create-react-app
 - create-react-app my-app (앱 만들 때 대문자 안된다. No longer Captial letters)
+- npm start run , npm start build, npx serve - build
 - src 폴더에 우리가 직접 작성할 소스코드 파일이 들어가고, public 폴더에 static 자원이 위치한다. public/index.html과 src/index.js는 엔트리 포인트가 되는 소스로, 파일이름이 변경되면 create-react-app은 작동하지 않으므로 주의한다.
 
 ### 컴포넌트(Component)란?
