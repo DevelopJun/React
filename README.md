@@ -41,3 +41,4 @@ React는 꼭 필요한 부분만 갱신하여 내부상태(가상 DOM)와 뷰(�
 
 # Webpack 
 > 모듈합해서 bundle 하는 기술, 
+> webpack은 src 부분만 bundle 하기 때문에, 이미지, 로고 등 다른 파일들 넣을때 웬만하면 src 밑에 넣어야 한다.
