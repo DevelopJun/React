@@ -3,7 +3,7 @@ This React Concept & Front_end development
 
 ## React 개발 관련 문서
 
-> React는 UI 컴포넌트 라이브러리이다. React UI 컴포넌트는 다른 특별한 템플릿 언어가 아닌 자바스크립트를 이용해서 만든다. 여러 컴포넌트로 UI 를 구성하는 이런 방식은 React의 핵심 철학이다. 
+> React는 UI 컴포넌트 라이브러리이다.(Framework가 아니다.) React UI 컴포넌트는 다른 특별한 템플릿 언어가 아닌 자바스크립트를 이용해서 만든다. 여러 컴포넌트로 UI 를 구성하는 이런 방식은 React의 핵심 철학이다. 
 
 > 단순한 앱 개발: React는 순수 자바스크립트로 만든 컴포넌트로 만든 컴포넌트 기반 아키텍쳐이다. 선언형 스타일이며, 강력하고 개발자 친화적인 DOM 추상화를 제공한다. React Native를 사용하면 DOM 뿐만 아니라 Android나 IOS에서도 이런 이점을 얻을 수 있다. 
 
