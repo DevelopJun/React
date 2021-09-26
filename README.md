@@ -55,3 +55,7 @@ React-Router Dom 을 통해서 url path 설정
 > 1. saltRounds = 10
 > 2. pre 메서드 사용, mongoose save 하기 전에 암호화 작업 진행. 
 
+## jsonwebtoken
+> 토큰 생성을 위해서 JsonWebtoken라이브러리를 다운로드 한다. 
+>  - npm install jsonwebtoken --save 
+
