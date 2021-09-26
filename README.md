@@ -59,3 +59,8 @@ React-Router Dom 을 통해서 url path 설정
 > 토큰 생성을 위해서 JsonWebtoken라이브러리를 다운로드 한다. 
 >  - npm install jsonwebtoken --save 
 
+## Auth 기능 
+> 1. Cookie에서 저장된 Token을 Server에서 가져와서 복호화를 한다. 
+> 2. 복호화를 하면 UserID가 나오는데 그 User ID를 이요해서 데이터 베이스 User Collection에서 유저를 찾은 후, 쿠키에서 받아온 token이 유저도 갖고 있는지 확인한다. 
+> 3. 쿠키 일치시 -> Authentification True 그리고 그 해당하는 유저 정보들을 
+
