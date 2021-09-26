@@ -48,19 +48,3 @@ React-Router Dom 을 통해서 url path 설정
 
 ## Axios
 
-## Bcrypt로 비밀번호 암호화 하는법 
-> 현재 데이터 베이스에 저장된 비밀 번호를 보면 너무 안전하지가 않다. 
-> 따라서 Bcrty를 이용하여 비밀 번호를 암호화 해줘서 데이터 베이스에 저장해줘야 한다. 
-> - npm install bcrpt --save
-> 1. saltRounds = 10
-> 2. pre 메서드 사용, mongoose save 하기 전에 암호화 작업 진행. 
-
-## jsonwebtoken
-> 토큰 생성을 위해서 JsonWebtoken라이브러리를 다운로드 한다. 
->  - npm install jsonwebtoken --save 
-
-## Auth 기능 
-> 1. Cookie에서 저장된 Token을 Server에서 가져와서 복호화를 한다. 
-> 2. 복호화를 하면 UserID가 나오는데 그 User ID를 이요해서 데이터 베이스 User Collection에서 유저를 찾은 후, 쿠키에서 받아온 token이 유저도 갖고 있는지 확인한다. 
-> 3. 쿠키 일치시 -> Authentification True 그리고 그 해당하는 유저 정보들을 
-
