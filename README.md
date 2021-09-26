@@ -52,5 +52,6 @@ React-Router Dom 을 통해서 url path 설정
 > 현재 데이터 베이스에 저장된 비밀 번호를 보면 너무 안전하지가 않다. 
 > 따라서 Bcrty를 이용하여 비밀 번호를 암호화 해줘서 데이터 베이스에 저장해줘야 한다. 
 > - npm install bcrpt --save
-> 1. 경로 router 접속
+> 1. saltRounds = 10
+> 2. pre 메서드 사용, mongoose save 하기 전에 암호화 작업 진행. 
 
