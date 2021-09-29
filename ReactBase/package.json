@@ -1,0 +1,15 @@
+{
+  "name": "reactbase",
+  "version": "1.0.0",
+  "description": "Backend Frontend center order package json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "concurrently \"npm run backend --prefix backend-nodejs\" \"npm run start --prefix reactbasic\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.2.2"
+  }
+}
