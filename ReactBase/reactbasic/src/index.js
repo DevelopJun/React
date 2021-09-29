@@ -3,12 +3,28 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
+import { Provider } from 'react-redux';
+
+import {applyMiddleware, createStore} from 'redux';
+import promiseMiddleware from 'redux-promise';
+import ReduxThunk from 'redux-thunk';
+
+import Reducer from './_reducers'; 
+
+const createStoreWithMiddleware = applyMiddleware(promiseMiddleware, ReduxThunk)(createStore) // redux data flow에 보는 것 처럼 promise랑 function을 잘 받기 위해서, middleware 삽입한다. 
+
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider
+    store={createStoreWithMiddleware(Reducer,
+      window.__REDUX_DEVTOOLS_EXTENSION__ &&
+      window.__REDUX_DEVTOOLS_EXTENSION__()
+      )}
+  >
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </Provider>
+  ,document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
