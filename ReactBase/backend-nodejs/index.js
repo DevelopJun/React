@@ -33,6 +33,10 @@ mongoose.connect(config.mongoURI, {
   }
 );
 
+app.get('/api/hello', (req, res)=>{
+    res.send("axios 테스트 입니다.")
+})
+
 
 
 app.post('/api/users/register', (req, res)=> {
