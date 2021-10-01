@@ -90,6 +90,15 @@ Cors 정책이란 Cross-Origin Resource Sharing(CORS) 보안을 위해서, 두�
 3. redux-promis (redux를 더 잘 사용할 수 있게 만드는 middleware이다.)
 4. redux-thunk (redux를 더 잘 사용할 수 있게 만드는 middleware이다.)
 
+## Reacrt Component
+- **Class Component** : Provide more features, Longer Code, More Complex Code, Slower Performance
+- **Functional Component** : Provide less features, Shorter Code, Simpler Code, Faster Performance
+> 요즘은 대부분 Hook을 사용한다. Functional componet를 대부분 사용하는거지, 
+
+> Constructor -> render -> React updates DOM and refs  
+
+
+
 
 
  
